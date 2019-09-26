@@ -1,1 +1,16 @@
-We gaan er voor
+<form>
+    Nummer 1: <input type="text" name="nummer1"><br>
+    Nummer 2: <input type="text" name= "nummer2"><br>
+    Totaal: <input type = "text" name= "sum"><br>
+    <input type="button" value="totaal" onclick= "totaal()">
+</form>
+
+<script>
+    function totaal() {
+     
+        let num1 = document.getElementsByName("nummer1")[0].value;
+        let num2 = document.getElementsByName("nummer2")[0].value;
+        let sum = Number(num1) + Number(num2);
+        document.getElementsByName("sum")[0].value = sum;
+     }
+</script>
